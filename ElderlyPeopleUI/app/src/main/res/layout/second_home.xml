@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".HomeSecond">
 
     <View
         android:id="@+id/top_view"
@@ -36,17 +36,17 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center">
-                
+
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/phone"
+                    android:src="@drawable/weather"
                     android:layout_gravity="center_horizontal"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ΚΛΗΣΗ"
+                    android:text="ΚΑΙΡΟΣ"
                     android:layout_gravity="center_horizontal"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -72,13 +72,13 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/sos"
+                    android:src="@drawable/news"
                     android:layout_gravity="center_horizontal"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="SOS"
+                    android:text="ΕΦΗΜΕΡΙΔΑ"
                     android:layout_gravity="center_horizontal"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -104,13 +104,13 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/me"
+                    android:src="@drawable/calendar"
                     android:layout_gravity="center_horizontal"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ΤΑ ΣΤΟΙΧΕΙΑ ΜΟΥ"
+                    android:text="ΗΜΕΡΟΛΟΓΙΟ"
                     android:layout_gravity="center_horizontal"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -136,13 +136,13 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/map"
+                    android:src="@drawable/settings"
                     android:layout_gravity="center_horizontal"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ΣΠΙΤΙ"
+                    android:text="ΡΥΘΜΙΣΕΙΣ"
                     android:layout_gravity="center_horizontal"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -152,30 +152,8 @@
 
     </GridLayout>
 
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Δευτέρα 21/04/2024"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"/>
-
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="20:15"
-        android:textColor="@color/black"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="52dp"/>
-
     <ImageButton
-        android:id="@+id/arrow_down"
+        android:id="@+id/arrow_up"
         android:layout_width="100dp"
         android:background="@drawable/rounded_rectangle"
         android:layout_height="100dp"
@@ -183,7 +161,7 @@
         android:src="@drawable/arrow"
         android:layout_gravity="bottom"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="600dp"
-        android:rotation="90" />
+        android:layout_marginTop="50dp"
+        android:rotation="270" />
 
 </RelativeLayout>
