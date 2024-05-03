@@ -12,6 +12,10 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     ImageButton imgButton;
+    androidx.cardview.widget.CardView phone;
+    androidx.cardview.widget.CardView sos;
+    androidx.cardview.widget.CardView me;
+    androidx.cardview.widget.CardView map;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +31,34 @@ public class MainActivity extends AppCompatActivity {
 
         imgButton.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, HomeSecond.class);
+            startActivity(intent);
+        });
+
+        phone = (androidx.cardview.widget.CardView) findViewById(R.id.phone);
+
+        phone.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, Phone.class);
+            startActivity(intent);
+        });
+
+        sos = (androidx.cardview.widget.CardView) findViewById(R.id.sos);
+
+        sos.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, SOS.class);
+            startActivity(intent);
+        });
+
+        me = (androidx.cardview.widget.CardView) findViewById(R.id.me);
+
+        me.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, Me.class);
+            startActivity(intent);
+        });
+
+        map = (androidx.cardview.widget.CardView) findViewById(R.id.map);
+
+        map.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, Map.class);
             startActivity(intent);
         });
     }
