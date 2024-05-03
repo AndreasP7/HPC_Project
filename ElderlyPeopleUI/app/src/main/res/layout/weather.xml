@@ -16,10 +16,10 @@
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
-                android:layout_height="arap_content"
+                android:layout_height="wrap_content"
                 android:text=" WEATHER TODAY"
                 android:textColor="@color/white"
-                android:textAligment="center"
+                android:textAlignment="center"
                 android:textStyle="bold"
                 android:textSize="30sp"
                 android:layout_marginTop="15dp" />
