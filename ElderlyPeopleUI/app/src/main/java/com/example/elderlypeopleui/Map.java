@@ -16,6 +16,8 @@ public class Map extends AppCompatActivity {
 
     TextView title;
     LinearLayout toolbar;
+
+    Toolbar appbar;
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
