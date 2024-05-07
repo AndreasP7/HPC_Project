@@ -27,7 +27,6 @@
             android:layout_column="0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
             />
         <include layout="@layout/contact"
             android:id="@+id/contact3"
@@ -35,7 +34,6 @@
             android:layout_column="0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
             />
         <include layout="@layout/contact"
             android:id="@+id/contact4"
@@ -43,7 +41,6 @@
             android:layout_column="0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
             />
         <include layout="@layout/contact"
             android:id="@+id/contact5"
