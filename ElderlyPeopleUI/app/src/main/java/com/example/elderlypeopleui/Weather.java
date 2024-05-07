@@ -22,6 +22,7 @@ public class Weather extends AppCompatActivity {
         setContentView(R.layout.weather);
         title = findViewById(R.id.title);
         title.setText("ΚΑΙΡΟΣ ΣΗΜΕΡΑ");
+        title.setTextSize(32);
         toolbar = findViewById(R.id.toolbar);
         toolbar.setBackgroundColor(getResources().getColor(R.color.blue));
 
