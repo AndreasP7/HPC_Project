@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     androidx.cardview.widget.CardView sos;
     androidx.cardview.widget.CardView me;
     androidx.cardview.widget.CardView map;
+    androidx.cardview.widget.CardView weather;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,6 +60,14 @@ public class MainActivity extends AppCompatActivity {
 
         map.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, Map.class);
+            startActivity(intent);
+        });
+
+
+        weather = (androidx.cardview.widget.CardView) findViewById(R.id.weather);
+
+        weather.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, Weather.class);
             startActivity(intent);
         });
     }

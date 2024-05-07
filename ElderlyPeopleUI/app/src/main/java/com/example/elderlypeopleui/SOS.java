@@ -1,23 +1,33 @@
 package com.example.elderlypeopleui;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class SOS extends AppCompatActivity {
 
+    ImageButton imgButton;
+    TextView title;
+    LinearLayout toolbar;
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.sos);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.top_view), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+        title = findViewById(R.id.title);
+        title.setText("SOS");
+        title.setTextColor(getResources().getColor(R.color.red));
+        title.setTextSize(60);
+        toolbar = findViewById(R.id.toolbar);
+        toolbar.setBackgroundColor(getResources().getColor(R.color.peach));
+
+        imgButton = (ImageButton) findViewById(R.id.arrow_back);
+
+        imgButton.setOnClickListener(view -> {
+            Intent intent = new Intent(SOS.this, MainActivity.class);
+            startActivity(intent);
         });
     }
 }

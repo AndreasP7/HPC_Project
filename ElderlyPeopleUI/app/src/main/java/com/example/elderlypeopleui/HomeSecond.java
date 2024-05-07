@@ -12,6 +12,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class HomeSecond extends AppCompatActivity {
     ImageButton imgButton;
+    androidx.cardview.widget.CardView weather;
+    androidx.cardview.widget.CardView calendar;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +29,20 @@ public class HomeSecond extends AppCompatActivity {
 
         imgButton.setOnClickListener(view -> {
             Intent intent = new Intent(HomeSecond.this, MainActivity.class);
+            startActivity(intent);
+        });
+
+        weather = (androidx.cardview.widget.CardView) findViewById(R.id.weather);
+
+        weather.setOnClickListener(view -> {
+            Intent intent = new Intent(HomeSecond.this, Weather.class);
+            startActivity(intent);
+        });
+
+        calendar = (androidx.cardview.widget.CardView) findViewById(R.id.calendar);
+
+        calendar.setOnClickListener(view -> {
+            Intent intent = new Intent(HomeSecond.this, Calendar.class);
             startActivity(intent);
         });
     }
