@@ -7,38 +7,13 @@
     <include layout="@layout/toolbar">
     </include>
 
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:rowCount="5"
-        android:columnCount="1"
-        android:layout_below="@+id/toolbar">
-        <LinearLayout
+    <fragment
+            android:id="@+id/google_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_row="0"
-            android:layout_column="0"
-            android:gravity="right"
-            android:background="@drawable/rectangle_border">
-
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="80dp"
-                android:src="@drawable/phone"
-                android:layout_marginRight="10dp"/>
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="0"
-            android:text="ΚΟΡΗ"
-            android:textColor="@color/black"
-            android:textSize="60sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="10dp"/>
-    </GridLayout>
-
+            android:layout_below="@id/toolbar"
+        />
 </RelativeLayout>
+
+
