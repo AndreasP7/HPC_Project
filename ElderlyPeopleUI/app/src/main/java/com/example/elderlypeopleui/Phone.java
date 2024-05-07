@@ -3,7 +3,9 @@ package com.example.elderlypeopleui;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +14,10 @@ public class Phone extends AppCompatActivity {
     ImageButton imgButton;
     TextView title;
     LinearLayout toolbar;
+
+    LinearLayout contact;
+    TextView name;
+    ImageView image;
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
@@ -21,7 +27,25 @@ public class Phone extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar);
         toolbar.setBackgroundColor(getResources().getColor(R.color.green));
 
-        imgButton = (ImageButton) findViewById(R.id.arrow_back);
+        contact = findViewById(R.id.contact1);
+        name = contact.findViewById(R.id.name);
+        name.setText("ΚΟΡΗ");
+        contact = findViewById(R.id.contact2);
+        name = contact.findViewById(R.id.name);
+        name.setText("ΣΥΖΥΓΟΣ");
+        contact = findViewById(R.id.contact3);
+        name = contact.findViewById(R.id.name);
+        name.setText("ΓΑΜΠΡΟΣ");
+        contact = findViewById(R.id.contact4);
+        name = contact.findViewById(R.id.name);
+        name.setText("ΕΓΓΟΝΙ");
+        contact = findViewById(R.id.contact5);
+        name = contact.findViewById(R.id.name);
+        name.setText("ΕΠΙΛΟΓΗ");
+        image = contact.findViewById(R.id.image);
+        contact.removeView(image);
+
+        imgButton = findViewById(R.id.arrow_back);
 
         imgButton.setOnClickListener(view -> {
             Intent intent = new Intent(Phone.this, MainActivity.class);
