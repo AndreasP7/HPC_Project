@@ -1,23 +1,31 @@
 package com.example.elderlypeopleui;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class Me extends AppCompatActivity {
 
+    ImageButton imgButton;
+    TextView title;
+    LinearLayout toolbar;
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.me);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.top_view), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+        setContentView(R.layout.sos);
+        title = findViewById(R.id.title);
+        title.setText("ΣΤΟΧΕΙΑ");
+        toolbar = findViewById(R.id.toolbar);
+        toolbar.setBackgroundColor(getResources().getColor(R.color.white));
+
+        imgButton = (ImageButton) findViewById(R.id.arrow_back);
+
+        imgButton.setOnClickListener(view -> {
+            Intent intent = new Intent(Me.this, MainActivity.class);
+            startActivity(intent);
         });
     }
 }

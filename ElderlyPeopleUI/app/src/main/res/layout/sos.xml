@@ -1,26 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <View
-        android:id="@+id/top_view"
+    <include layout="@layout/toolbar">
+    </include>
+
+    <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/bg_view"
-        tools:ignore="MissingConstraints" />
+        android:layout_height="match_parent"
+        android:rowCount="5"
+        android:columnCount="1"
+        android:layout_below="@+id/toolbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:gravity="right"
+            android:background="@drawable/rectangle_border">
 
-    <TextView
-        android:id="@+id/testsos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="sos"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        tools:ignore="MissingConstraints" />
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:src="@drawable/phone"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="ΚΟΡΗ"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+    </GridLayout>
+
+</RelativeLayout>
