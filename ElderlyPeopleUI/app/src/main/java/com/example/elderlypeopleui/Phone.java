@@ -15,7 +15,7 @@ public class Phone extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.map);
+        setContentView(R.layout.phone);
         title = findViewById(R.id.title);
         title.setText("ΤΗΛΕΦΩΝΟ");
         toolbar = findViewById(R.id.toolbar);

@@ -2,28 +2,33 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/rectangle_border">
+    android:layout_height="match_parent"
+    android:background="@drawable/rectangle_border"
+    android:orientation="horizontal"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="10dp"
+    >
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="ΚΟΡΗ"
         android:textColor="@color/black"
         android:textSize="60sp"
         android:textStyle="bold"
-        android:layout_marginLeft="10dp"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="right">
+        android:layout_gravity="start"
+        android:layout_weight="1"
+        />
 
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="80dp"
-            android:src="@drawable/phone"
-            android:layout_marginRight="10dp"/>
-    </LinearLayout>
 
-    </LinearLayout>
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:src="@drawable/phone"
+        android:paddingStart="8dp"
+        android:layout_gravity="end"
+        android:padding = "10dp"
+        />
+</LinearLayout>
+
