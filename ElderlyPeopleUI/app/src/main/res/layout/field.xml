@@ -14,23 +14,13 @@
         android:id="@+id/name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="ΕΠΑΦΗ"
+        android:text="ΠΕΔΙΟ"
         android:textColor="@color/black"
-        android:textSize="60sp"
+        android:textSize="43sp"
         android:textStyle="bold"
         android:layout_gravity="start"
         android:layout_weight="1"
         />
 
-
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="70dp"
-        android:layout_height="80dp"
-        android:src="@drawable/phone"
-        android:paddingStart="8dp"
-        android:layout_gravity="end"
-        android:padding = "10dp"
-        />
 </LinearLayout>
 
