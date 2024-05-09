@@ -18,6 +18,7 @@ public class Phone extends AppCompatActivity {
     LinearLayout contact;
     TextView name;
     ImageView image;
+    LinearLayout call;
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
@@ -49,6 +50,13 @@ public class Phone extends AppCompatActivity {
 
         imgButton.setOnClickListener(view -> {
             Intent intent = new Intent(Phone.this, MainActivity.class);
+            startActivity(intent);
+        });
+
+        call = findViewById(R.id.contact1);
+
+        call.setOnClickListener(view -> {
+            Intent intent = new Intent(Phone.this, Call.class);
             startActivity(intent);
         });
     }

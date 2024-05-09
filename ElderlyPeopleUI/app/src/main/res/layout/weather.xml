@@ -1,112 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/navyBlue">
 
-    <include layout="@layout/toolbar">
+    <include layout="@layout/toolbar" />
 
-    </include>
-
-    <ScrollView
+    <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="16dp">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:layout_marginTop="8dp"
+            android:text="Σάββατο 8 Ιουνίου"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold" />
 
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background2"
+            android:columnCount="1"
+            android:padding="16dp">
 
-
-            <TextView
-                android:id="@+id/textView"
+            <ImageView
+                android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=" WEATHER TODAY"
-                android:textColor="@color/white"
+                android:layout_margin="8dp"
+                android:paddingBottom="1dp"
+                app:srcCompat="@drawable/weather" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Αίθριος"
                 android:textAlignment="center"
-                android:textStyle="bold"
-                android:textSize="30sp"
-                android:layout_marginTop="15dp" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Σάββατο 8 Ιουνίου"
                 android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="20°C"
                 android:textAlignment="center"
-                android:textStyle="bold"
-                android:textSize="25sp"
-                android:layout_marginTop="8dp"/>
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Πραγματική Αίσθηση: 23°C  Άνεμος: 14km/h"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Υγρασία: 11%"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/background2"
-                android:layout_margin="14dp"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
 
                 <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    app:srcCompat="@drawable/weather" />
+                    android:id="@+id/imageView2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/rainyy" />
 
                 <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="match_parent"
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Αίθριος"
+                    android:layout_gravity="center_vertical"
+                    android:text="Κυριακή 17°C"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="30dp"/>
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/goood" />
 
                 <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="20°C"
-                    android:textAlignment="center"
-                    android:textSize="35dp"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:layout_marginTop="5dp"/>
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Πραγματική Αίσθηση:23°C  Άνεμος: 14km/h"
+                    android:layout_gravity="center_vertical"
+                    android:text="Δευτέρα 23°C"
                     android:textAlignment="center"
-                    android:textSize="19dp"
                     android:textColor="@color/black"
-                    android:textStyle="bold"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:orientation="vertical"></LinearLayout>
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
+        </GridLayout>
 
-                    <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.333"
-                        android:text="Υγρασία:11%"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="22dp"
-                        android:textStyle="bold" />
-                </LinearLayout>
+    </GridLayout>
 
-
-        </LinearLayout>
-
-    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
