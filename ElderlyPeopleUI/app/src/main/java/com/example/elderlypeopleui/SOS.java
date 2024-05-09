@@ -17,6 +17,7 @@ public class SOS extends AppCompatActivity {
     LinearLayout contact;
     TextView name;
     ImageView image;
+    LinearLayout call;
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
@@ -32,32 +33,39 @@ public class SOS extends AppCompatActivity {
         name = contact.findViewById(R.id.name);
         name.setText("100");
         image = contact.findViewById(R.id.image);
-        image.setImageResource(R.drawable.arrow);
+        image.setImageResource(R.drawable.police);
         contact = findViewById(R.id.contact2);
         name = contact.findViewById(R.id.name);
         name.setText("166");
         image = contact.findViewById(R.id.image);
-        image.setImageResource(R.drawable.edit);
+        image.setImageResource(R.drawable.hospital);
         contact = findViewById(R.id.contact3);
         name = contact.findViewById(R.id.name);
         name.setText("199");
         image = contact.findViewById(R.id.image);
-        image.setImageResource(R.drawable.map);
+        image.setImageResource(R.drawable.fire_department);
         contact = findViewById(R.id.contact4);
         name = contact.findViewById(R.id.name);
         name.setText("112");
         image = contact.findViewById(R.id.image);
-        image.setImageResource(R.drawable.weather);
+        image.setImageResource(R.drawable.european_number);
         contact = findViewById(R.id.contact5);
         name = contact.findViewById(R.id.name);
         name.setText("ΙΑΤΡΟΣ");
         image = contact.findViewById(R.id.image);
-        image.setImageResource(R.drawable.thema);
+        image.setImageResource(R.drawable.nurse);
 
         imgButton = (ImageButton) findViewById(R.id.arrow_back);
 
         imgButton.setOnClickListener(view -> {
             Intent intent = new Intent(SOS.this, MainActivity.class);
+            startActivity(intent);
+        });
+
+        call = findViewById(R.id.contact5);
+
+        call.setOnClickListener(view -> {
+            Intent intent = new Intent(SOS.this, CallSOS.class);
             startActivity(intent);
         });
     }

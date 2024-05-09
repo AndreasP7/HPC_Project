@@ -14,30 +14,58 @@ public class Calendar extends AppCompatActivity {
     LinearLayout toolbar;
     LinearLayout date;
     TextView day;
+    TextView nameday;
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.me);
+        setContentView(R.layout.calendar);
         title = findViewById(R.id.title);
         title.setText("ΗΜΕΡΟΛΟΓΙΟ");
         toolbar = findViewById(R.id.toolbar);
         toolbar.setBackgroundColor(getResources().getColor(R.color.white));
 
         date = findViewById(R.id.date1);
+        date.setBackgroundColor(getResources().getColor(R.color.darkGreen));
         day = date.findViewById(R.id.day);
-        day.setText("fwefwefwef");
+        nameday = date.findViewById(R.id.nameday);
+        day.setText("ΚΥΡΙΑΚΗ 21 ΑΠΡΙΛΙΟΥ 2024");
+        nameday.setText("ΓΙΟΡΤΕΣ: Αλεξάνδρα, Σάντρα, Σάσα, Ιανουάριος, Ιανός, Φαίστος");
         date = findViewById(R.id.date2);
+        date.setBackgroundColor(getResources().getColor(R.color.darkRed));
         day = date.findViewById(R.id.day);
-        day.setText("ΕΠΙΘΕΤΟ: \nΑΝΔΡΙΑΝΟΣ");
+        nameday = date.findViewById(R.id.nameday);
+        day.setText("ΔΕΥΤΕΡΑ 22 ΑΠΡΙΛΙΟΥ 2024");
+        nameday.setText("ΓΙΟΡΤΕΣ: Νέαρχος, Νιάρχος, Ναθαναήλ, Ναθάνης, ");
         date = findViewById(R.id.date3);
+        date.setBackgroundColor(getResources().getColor(R.color.olive));
         day = date.findViewById(R.id.day);
-        day.setText("ΑΜΚΑ: \n05025000382");
+        nameday = date.findViewById(R.id.nameday);
+        day.setText("ΤΡΙΤΗ 23 ΑΠΡΙΛΙΟΥ 2024");
+        nameday.setText("ΠΑΓΚΟΣΜΙΑ ΗΜΕΡΑ ΒΙΒΛΙΟΥ");
         date = findViewById(R.id.date4);
+        date.setBackgroundColor(getResources().getColor(R.color.pink));
         day = date.findViewById(R.id.day);
-        day.setText("ΑΦΜ: \n785869345");
+        nameday = date.findViewById(R.id.nameday);
+        day.setText("ΤΕΤΑΡΤΗ 24 ΑΠΡΙΛΙΟΥ 2024");
+        nameday.setText("ΓΙΟΡΤΕΣ: Αχιλλέας, Δούκας, Βαλεντίνα, Ελίζα, Ζέτα, Βέτα, Μπέττυ, Ελισσάβετ, Θαυμαστός");
         date = findViewById(R.id.date5);
+        date.setBackgroundColor(getResources().getColor(R.color.orange));
         day = date.findViewById(R.id.day);
-        day.setText("ΤΑΥΤΟΤΗΑ: \nΑΒ 23671");
+        nameday = date.findViewById(R.id.nameday);
+        day.setText("ΠΕΜΠΤΗ 25 ΑΠΡΙΛΙΟΥ 2024");
+        nameday.setText("ΓΙΟΡΤΕΣ: Νίκη");
+        date = findViewById(R.id.date6);
+        date.setBackgroundColor(getResources().getColor(R.color.turquoise));
+        day = date.findViewById(R.id.day);
+        nameday = date.findViewById(R.id.nameday);
+        day.setText("ΠΑΡΑΣΚΕΥΗ 26 ΑΠΡΙΛΙΟΥ 2024");
+        nameday.setText("ΓΙΟΡΤΕΣ: Γλαφυρός, Γλαφύρα, Γλαφυρή, Γλαφυρούλα");
+        date = findViewById(R.id.date7);
+        date.setBackgroundColor(getResources().getColor(R.color.navyBlue));
+        day = date.findViewById(R.id.day);
+        nameday = date.findViewById(R.id.nameday);
+        day.setText("ΣΑΒΒΑΤΟ 27 ΑΠΡΙΛΙΟΥ 2024");
+        nameday.setText("ΓΙΟΡΤΕΣ: Λάζαρος, Λάζος, Λαζαρία, Λαζαρούλα");
 
         imgButton = findViewById(R.id.arrow_back);
 
