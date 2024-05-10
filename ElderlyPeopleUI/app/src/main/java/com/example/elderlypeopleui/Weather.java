@@ -30,7 +30,7 @@ public class Weather extends AppCompatActivity {
 
 
         imgButton.setOnClickListener(view -> {
-            Intent intent = new Intent(Weather.this, MainActivity.class);
+            Intent intent = new Intent(Weather.this, HomeSecond.class);
             startActivity(intent);
         });
     }

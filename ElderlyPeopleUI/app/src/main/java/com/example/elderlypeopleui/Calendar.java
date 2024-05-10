@@ -70,7 +70,7 @@ public class Calendar extends AppCompatActivity {
         imgButton = findViewById(R.id.arrow_back);
 
         imgButton.setOnClickListener(view -> {
-            Intent intent = new Intent(Calendar.this, MainActivity.class);
+            Intent intent = new Intent(Calendar.this, HomeSecond.class);
             startActivity(intent);
         });
     }

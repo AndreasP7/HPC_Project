@@ -53,7 +53,7 @@ public class settings extends AppCompatActivity {
         imgButton = findViewById(R.id.arrow_back);
 
         imgButton.setOnClickListener(view -> {
-            Intent intent = new Intent(settings.this, MainActivity.class);
+            Intent intent = new Intent(settings.this, HomeSecond.class);
             startActivity(intent);
         });
 

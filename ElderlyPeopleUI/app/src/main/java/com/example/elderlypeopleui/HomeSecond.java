@@ -15,6 +15,8 @@ public class HomeSecond extends AppCompatActivity {
     androidx.cardview.widget.CardView weather;
     androidx.cardview.widget.CardView calendar;
 
+    androidx.cardview.widget.CardView settings;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
@@ -43,6 +45,13 @@ public class HomeSecond extends AppCompatActivity {
 
         calendar.setOnClickListener(view -> {
             Intent intent = new Intent(HomeSecond.this, Calendar.class);
+            startActivity(intent);
+        });
+
+        settings = (androidx.cardview.widget.CardView) findViewById(R.id.settings);
+
+        settings.setOnClickListener(view -> {
+            Intent intent = new Intent(HomeSecond.this, settings.class);
             startActivity(intent);
         });
     }
