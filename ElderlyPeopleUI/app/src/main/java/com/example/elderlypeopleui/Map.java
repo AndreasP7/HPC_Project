@@ -20,6 +20,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
@@ -83,6 +84,11 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback {
         MarkerOptions markerOptions = new MarkerOptions().position(currentLatLng).title("My Location");
         googleMap.addMarker(markerOptions);
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLatLng, 18));
+
+        LatLng destination = new LatLng(37.946487438528706, 23.66384436838045);
+
+        googleMap.addMarker(new MarkerOptions().position(destination).title("Σπιτι").icon(BitmapDescriptorFactory.fromResource(R.drawable.home)));
+
 
     }
 

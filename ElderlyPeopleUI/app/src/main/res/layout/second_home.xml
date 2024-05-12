@@ -24,7 +24,7 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/weather"
-            android:layout_width="150dp"
+            android:layout_width="50dp"
             android:layout_height="150dp"
             app:cardCornerRadius="15dp"
             android:layout_columnWeight="1"
@@ -57,7 +57,7 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/news"
-            android:layout_width="150dp"
+            android:layout_width="50dp"
             android:layout_height="150dp"
             app:cardCornerRadius="15dp"
             android:layout_columnWeight="1"
@@ -90,7 +90,7 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/calendar"
-            android:layout_width="150dp"
+            android:layout_width="50dp"
             android:layout_height="150dp"
             app:cardCornerRadius="15dp"
             android:layout_columnWeight="1"
@@ -123,7 +123,7 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/settings"
-            android:layout_width="150dp"
+            android:layout_width="50dp"
             android:layout_height="150dp"
             app:cardCornerRadius="15dp"
             android:layout_columnWeight="1"
