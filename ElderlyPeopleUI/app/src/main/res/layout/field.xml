@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:text="ΠΕΔΙΟ"
         android:textColor="@color/black"
-        android:textSize="43sp"
+        android:textSize="35dp"
         android:textStyle="bold"
         android:layout_gravity="start"
         android:layout_weight="1"

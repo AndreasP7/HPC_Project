@@ -39,15 +39,15 @@ public class settings extends AppCompatActivity {
         set = findViewById(R.id.set3);
         name = set.findViewById(R.id.name);
         name.setText("ΓΕΝΙΚΕΣ ΡΥΘΜΙΣΕΙΣ");
-        name.setTextSize(50);
+
         set = findViewById(R.id.set4);
         name = set.findViewById(R.id.name);
         name.setText("ΡΥΘΜΙΣΕΙΣ ΔΙΚΤΥΟΥ");
-        name.setTextSize(50);
+
         set = findViewById(R.id.set5);
         name = set.findViewById(R.id.name);
         name.setText("ΡΥΘΜΙΣΕΙΣ ΩΡΑΣ");
-        name.setTextSize(52);
+
 
 
         imgButton = findViewById(R.id.arrow_back);

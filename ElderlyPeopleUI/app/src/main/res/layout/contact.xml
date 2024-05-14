@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:text="ΕΠΑΦΗ"
         android:textColor="@color/black"
-        android:textSize="60sp"
+        android:textSize="50sp"
         android:textStyle="bold"
         android:layout_gravity="start"
         android:layout_weight="1"
