@@ -1,4 +1,6 @@
 package com.example.elderlypeopleui;
 
-public class WeatherDay {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class WeatherDay  {
 }

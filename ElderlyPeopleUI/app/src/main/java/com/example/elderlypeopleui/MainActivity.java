@@ -1,15 +1,23 @@
 package com.example.elderlypeopleui;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.ImageButton;
+import android.widget.TextView;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.net.MalformedURLException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class MainActivity extends AppCompatActivity {
+
 
     ImageButton imgButton;
     androidx.cardview.widget.CardView phone;
@@ -70,5 +78,10 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, Weather.class);
             startActivity(intent);
         });
+
+
+
     }
+
+
 }
