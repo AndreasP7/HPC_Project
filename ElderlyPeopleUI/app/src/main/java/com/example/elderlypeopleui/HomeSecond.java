@@ -1,6 +1,7 @@
 package com.example.elderlypeopleui;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.ImageButton;
 
@@ -17,6 +18,8 @@ public class HomeSecond extends AppCompatActivity {
 
     androidx.cardview.widget.CardView settings;
 
+    SharedPreferences sharedPreferences;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
@@ -26,6 +29,9 @@ public class HomeSecond extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        SharedPreferences sharedPreferences = getSharedPreferences("MySharedPref", MODE_PRIVATE);
+
 
         imgButton = (ImageButton) findViewById(R.id.arrow_up);
 
@@ -51,8 +57,16 @@ public class HomeSecond extends AppCompatActivity {
         settings = (androidx.cardview.widget.CardView) findViewById(R.id.settings);
 
         settings.setOnClickListener(view -> {
-            Intent intent = new Intent(HomeSecond.this, settings.class);
-            startActivity(intent);
+            if(sharedPreferences.contains("password")){
+                Intent intent = new Intent(HomeSecond.this, LogIn.class);
+                startActivity(intent);
+            }
+            else{
+                Intent intent = new Intent(HomeSecond.this, SetPassword.class);
+                startActivity(intent);
+            }
+
+
         });
     }
 }
