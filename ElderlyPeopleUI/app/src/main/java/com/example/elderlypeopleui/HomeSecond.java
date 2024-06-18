@@ -43,7 +43,7 @@ public class HomeSecond extends AppCompatActivity {
         weather = (androidx.cardview.widget.CardView) findViewById(R.id.weather);
 
         weather.setOnClickListener(view -> {
-            Intent intent = new Intent(HomeSecond.this, Weather.class);
+            Intent intent = new Intent(HomeSecond.this, WeatherMain.class);
             startActivity(intent);
         });
 

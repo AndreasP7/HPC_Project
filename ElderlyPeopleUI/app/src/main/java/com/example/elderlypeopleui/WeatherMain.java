@@ -70,7 +70,11 @@ public class WeatherMain extends AppCompatActivity {
         String currentDate = simpleDateFormat.format(dateObject);
         date.setText(currentDate);
 
-
-
+        /*RequestOptions options = new RequestOptions()
+                .centerCrop()
+                .placeholder(R.mipmap.ic_launcher_round)
+                .error(R.mipmap.ic_launcher_round);
+        Glide.with(this).load(thumbnailUrl).apply(options).into(icon);
+        */
     }
 }
