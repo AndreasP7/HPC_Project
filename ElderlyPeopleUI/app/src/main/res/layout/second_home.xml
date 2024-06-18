@@ -56,46 +56,13 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/news"
+            android:id="@+id/calendar"
             android:layout_width="50dp"
             android:layout_height="150dp"
             app:cardCornerRadius="15dp"
             android:layout_columnWeight="1"
             android:layout_row="0"
             android:layout_column="1"
-            android:layout_margin="12dp"
-            app:cardElevation="12dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:src="@drawable/news"
-                    android:layout_gravity="center_horizontal"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="ΕΦΗΜΕΡΙΔΑ"
-                    android:layout_gravity="center_horizontal"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/black" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/calendar"
-            android:layout_width="50dp"
-            android:layout_height="150dp"
-            app:cardCornerRadius="15dp"
-            android:layout_columnWeight="1"
-            android:layout_row="1"
-            android:layout_column="0"
             android:layout_margin="12dp"
             app:cardElevation="12dp">
             <LinearLayout
@@ -128,7 +95,8 @@
             app:cardCornerRadius="15dp"
             android:layout_columnWeight="1"
             android:layout_row="1"
-            android:layout_column="1"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
             android:layout_margin="12dp"
             app:cardElevation="12dp">
             <LinearLayout
