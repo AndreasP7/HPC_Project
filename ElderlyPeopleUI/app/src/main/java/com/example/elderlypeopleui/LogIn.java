@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,6 +23,7 @@ public class LogIn extends AppCompatActivity {
 
     TextView title;
     LinearLayout toolbar;
+    ImageButton imgButton;
     Button loginBtn;
     Button changeBtn;
 
@@ -60,6 +62,13 @@ public class LogIn extends AppCompatActivity {
 
         changeBtn.setOnClickListener(view -> {
             Intent intent = new Intent(LogIn.this, SetPassword.class);
+            startActivity(intent);
+        });
+
+        imgButton = findViewById(R.id.arrow_back);
+
+        imgButton.setOnClickListener(view -> {
+            Intent intent = new Intent(LogIn.this, HomeSecond.class);
             startActivity(intent);
         });
 

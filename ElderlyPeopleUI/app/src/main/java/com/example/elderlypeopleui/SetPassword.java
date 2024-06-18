@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -25,6 +26,7 @@ public class SetPassword extends AppCompatActivity {
     String newPassword;
     String givenCurrent;
     SharedPreferences sharedPreferences;
+    ImageButton imgButton;
 
     boolean signedUp;
     boolean match = false;
@@ -66,6 +68,13 @@ public class SetPassword extends AppCompatActivity {
                 startActivity(intent);
 
             }
+        });
+
+        imgButton = findViewById(R.id.arrow_back);
+
+        imgButton.setOnClickListener(view -> {
+            Intent intent = new Intent(SetPassword.this, HomeSecond.class);
+            startActivity(intent);
         });
 
 
