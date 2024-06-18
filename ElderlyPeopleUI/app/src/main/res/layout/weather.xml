@@ -16,19 +16,9 @@
             android:layout_height="wrap_content"
             android:columnCount="1"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="60dp">
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:layout_marginTop="6dp"
-                android:text="Σάββατο 8 Ιουνίου"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="28sp"
-                android:textStyle="bold" />
+
 
             <GridLayout
                 android:layout_width="match_parent"
@@ -38,23 +28,6 @@
                 android:columnCount="1"
                 android:padding="16dp">
 
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:layout_margin="8dp"
-                    android:paddingBottom="1dp"
-                    app:srcCompat="@drawable/weather" />
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Αίθριος"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView4"
@@ -64,7 +37,7 @@
                     android:text="20°C"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="30sp"
+                    android:textSize="50sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -72,72 +45,57 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Πραγματική Αίσθηση: 23°C  Άνεμος: 14km/h"
+                    android:text="Αθήνα"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="14sp"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Αίθριος"
+                    android:layout_marginTop="15dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
 
                 <TextView
                     android:id="@+id/textView6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="15dp"
                     android:text="Υγρασία: 11%"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="17sp"
+                    android:textSize="22sp"
                     android:textStyle="bold" />
 
-                <LinearLayout
+
+                <TextView
+                    android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="16dp">
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Σάββατο 8 Ιουνίου"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
 
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginEnd="8dp"
-                        android:src="@drawable/rainyy" />
 
-                    <TextView
-                        android:id="@+id/textView7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:text="Κυριακή 17°C"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="16dp">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginEnd="8dp"
-                        android:src="@drawable/goood" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:text="Δευτέρα 23°C"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
 
             </GridLayout>
 
+
+
         </GridLayout>
+
+
 
     </ScrollView>
 
